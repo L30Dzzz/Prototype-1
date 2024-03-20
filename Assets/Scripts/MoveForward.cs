@@ -5,6 +5,7 @@ using UnityEngine;
 public class MoveForward : MonoBehaviour
 {
     private float speed = 25;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +15,7 @@ public class MoveForward : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //makes objects go forward
         transform.Translate(Vector3.forward * Time.deltaTime * speed);
     }
 }
